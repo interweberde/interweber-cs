@@ -2,8 +2,7 @@
 <ruleset name="Interweber">
     <description>Coding standard based on CakePHP, but allowing Braces on the same Line.</description>
 
-    <arg name="extensions" value="php" />
-     <!-- Include the whole CakePHP standard -->
+    <!-- Include the whole CakePHP standard -->
     <rule ref="vendor/cakephp/cakephp-codesniffer/CakePHP">
         <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
         <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" />
