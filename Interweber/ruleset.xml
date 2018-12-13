@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<ruleset name="Interweber">
+    <description>Coding standard based on CakePHP, but allowing Braces on the same Line.</description>
+
+    <arg name="extensions" value="php" />
+     <!-- Include the whole CakePHP standard -->
+    <rule ref="vendor/cakephp/cakephp-codesniffer/CakePHP">
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
+        <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" />
+        <exclude name="Generic.Formatting.NoSpaceAfterCast" />
+    </rule>
+
+    <rule ref="CakePHP.Commenting.FunctionComment">
+        <severity>0</severity>
+    </rule>
+    <rule ref="CakePHP.Formatting.UseInAlphabeticalOrder.UseInAlphabeticalOrder">
+        <severity>1</severity>
+    </rule>
+
+    <rule ref="Generic.PHP.NoSilencedErrors">
+        <properties>
+            <property name="error" value="true" />
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Formatting.SpaceAfterCast">
+        <properties>
+            <property name="error" value="true" />
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie">
+        <properties>
+            <property name="checkFunctions" value="true" />
+            <property name="checkClosures" value="true" />
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Classes.OpeningBraceSameLine">
+        <properties>
+            <property name="error" value="true" />
+        </properties>
+    </rule>
+</ruleset>
