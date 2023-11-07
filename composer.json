@@ -1,10 +1,10 @@
 {
-    "version": "2.0.0",
+    "version": "3.0.0",
     "name": "interweberde/interweber-cs",
     "description": "Interweber CodeSniffer Standards",
     "type": "phpcodesniffer-standard",
     "keywords": ["framework", "codesniffer"],
-    "homepage": "http://interweber.de",
+    "homepage": "https://interweber.de",
     "license": "MIT",
     "authors": [
         {
@@ -16,8 +16,13 @@
         "source": "https://github.com/interweberde/interweber-cs"
     },
     "require": {
-        "php": ">=7.2",
+        "php": ">=8.0",
         "squizlabs/php_codesniffer": "^3.0.0",
-        "cakephp/cakephp-codesniffer": "^4.0"
+        "cakephp/cakephp-codesniffer": "^5.1.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
