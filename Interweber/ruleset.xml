@@ -19,11 +19,7 @@
         </properties>
     </rule>
 
-    <rule ref="Generic.Formatting.SpaceAfterCast">
-        <properties>
-            <property name="error" value="true" />
-        </properties>
-    </rule>
+    <rule ref="Generic.Formatting.SpaceAfterCast" />
 
     <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie">
         <properties>
@@ -32,9 +28,5 @@
         </properties>
     </rule>
 
-    <rule ref="Generic.Classes.OpeningBraceSameLine">
-        <properties>
-            <property name="error" value="true" />
-        </properties>
-    </rule>
+    <rule ref="Generic.Classes.OpeningBraceSameLine" />
 </ruleset>
